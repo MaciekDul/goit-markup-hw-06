@@ -20,7 +20,7 @@
     />
   </head>
   <body>
-        <header>
+    <header>
       <div class="container">
         <div class="header-nav">
           <a class="title-discription" href="#WebStudio"
@@ -29,12 +29,12 @@
           <nav class="nav-content">
             <ul class="list nav-menu">
               <li>
-                <a class="link index-discription" href="./index.html">Agencja</a>
+                <a class="link index-discription" href="./index.html"
+                  >Agencja</a
+                >
               </li>
               <li>
-                <a class="link" href="./portfolio.html"
-                  >Portfolio</a
-                >
+                <a class="link" href="./portfolio.html">Portfolio</a>
               </li>
               <li>
                 <a class="link" href="/Kontakt">Kontakt</a>
@@ -501,16 +501,108 @@
               </li>
             </ul>
           </div>
+          <div class="newsletter-description">
+            <h3>zapisz sie do newslettera</h3>
+            <div class="imput-section">
+              <input
+                class="input-email"
+                type="email"
+                name="email"
+                id="user_email"
+                placeholder="E-mail"
+              />
+              <button type="submit">
+                <span>Zapisz się</span>
+
+                <svg width="24" height="24">
+                  <use href="./images/icons.svg/icons.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
-<div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-            <button type="button" class="close-first-button" data-modal-close>
-                <svg class="icon-close">
-                    <use href="./images/icons.svg/icons.svg#icon-close"></use>
-                </svg>
-            </button>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-first-button" data-modal-close>
+          <svg class="icon-close">
+            <use href="./images/icons.svg/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+<div>
+                <h2 class="modal-caption">
+                    Zostaw swoje dane w formularzu poniżej
+                </h2>
+
+                <form>
+                    <div class="modal-container">
+
+                        <label class="modal-sticker" for="user-name">Imię
+                            <span class="input-container">
+
+                                <svg class="modal-svg">
+                                    <use href="./images/icons.svg/icons.svg#icon-Vector-5"></use>
+                                </svg>
+
+                                <input class="modal-entry" type="text" id="user-name" name="user-name" />
+                            </span>
+                        </label>
+
+                        <label class="modal-sticker" for="user-phone">Telefon
+                            <span class="input-container">
+
+                                <svg class="modal-svg">
+                                    <use href="./images/icons.svg/icons.svg#icon-Vector-1"></use>
+                                </svg>
+
+                                <input class="modal-entry" type="tel" id="user-phone" name="user-phone" />
+                            </span>
+                        </label>
+
+                        <label class="modal-sticker" for="user-email">Email
+                            <span class="input-container">
+
+                                <svg class="modal-svg">
+                                    <use href="./images/icons.svg/icons.svg#icon-Vector-2"></use>
+                                </svg>
+
+                                <input class="modal-entry" type="text" id="user-email" name="user-email" />
+                            </span>
+                        </label>
+
+                        <label for="comment" class="modal-sticker">Komentarz
+                            <textarea name="user-comment" id="comment" class="modal-textarea"
+                                placeholder="Wprowadź tekst"></textarea>
+                        </label>
+                    </div>
+
+                    <div class="checkbox-container">
+                        <label for="checkbox" class="checkbox-sticker" >
+                       
+                            <input id="checkbox" type="checkbox" class="checkbox-entry" name="regulations-acceptance"
+                                required />
+
+                            <svg class="checkbox-icon">
+                                <use href="./images/icons.svg/icons.svg#icon-Vector-3"></use>
+                            </svg>
+
+                            <svg class="checkbox-svg">
+                                <use href="./images/icons.svg/icons.svg#icon-Vector-4"></use>
+                            </svg>
+                        
+                        <span class="comment">Oświadczam iż akceptuję <a href="#">Regulamin</a> i
+                            <a href="#">Politykę Prywatności</a>.
+                        </span>
+
+                        <button class="modal-button">Wyślij</button>
+
+                    </div>
+            </div>
+
+</div>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
